@@ -47,7 +47,7 @@ namespace ECommerceAPI.Persistence.Configurations
             };
             Category parent2Sample = new()
             {
-                Id = 3,
+                Id = 4,
                 Name = "Koltuk Takımı",
                 Priority = 1,
                 ParentId = 2,

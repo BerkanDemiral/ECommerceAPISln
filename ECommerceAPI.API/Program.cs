@@ -1,4 +1,6 @@
 
+using ECommerceAPI.Persistence;
+
 namespace ECommerceAPI.API
 {
     public class Program
@@ -18,6 +20,9 @@ namespace ECommerceAPI.API
                 .SetBasePath(env.ContentRootPath)
                 .AddJsonFile("appsettings.json", optional: false)
                 .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true);
+
+            // Yukarýda Configurationa ait ortam ayarlamalarýný yaptýktan sonra aþaðýdaki Persistence() kodunu yazýyoruz ki build aþamasý doðru olsun !!!
+            builder.Services.AddPersistence(builder.Configuration);
 
             var app = builder.Build();
 

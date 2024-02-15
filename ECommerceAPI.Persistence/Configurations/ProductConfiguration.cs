@@ -22,7 +22,7 @@ namespace ECommerceAPI.Persistence.Configurations
                 Title = faker.Commerce.ProductName(),
                 Description = faker.Commerce.ProductDescription(),
                 BrandId = 1,
-                Discount = faker.Random.Decimal(0, 10),
+                Discount = faker.Random.Decimal(15, 2),
                 Price = faker.Finance.Amount(10, 1000),
                 CreatedDate = DateTime.Now,
                 isDeleted = false
@@ -33,7 +33,7 @@ namespace ECommerceAPI.Persistence.Configurations
                 Title = faker.Commerce.ProductName(),
                 Description = faker.Commerce.ProductDescription(),
                 BrandId = 3,
-                Discount = faker.Random.Decimal(0, 10),
+                Discount = faker.Random.Decimal(15, 2),
                 Price = faker.Finance.Amount(10, 1000),
                 CreatedDate = DateTime.Now,
                 isDeleted = false
@@ -44,7 +44,7 @@ namespace ECommerceAPI.Persistence.Configurations
                 Title = faker.Commerce.ProductName(),
                 Description = faker.Commerce.ProductDescription(),
                 BrandId = 2,
-                Discount = faker.Random.Decimal(0, 10),
+                Discount = faker.Random.Decimal(15, 2),
                 Price = faker.Finance.Amount(10, 1000),
                 CreatedDate = DateTime.Now,
                 isDeleted = false
